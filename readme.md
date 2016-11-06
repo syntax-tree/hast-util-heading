@@ -10,9 +10,6 @@ Check if a [node][] is a [**heading**][spec] [element][].
 npm install hast-util-heading
 ```
 
-**hast-util-heading** is also available as an AMD, CommonJS, and
-globals module, [uncompressed and compressed][releases].
-
 ## Usage
 
 ```javascript
@@ -55,8 +52,6 @@ Check if the given value is a [**heading**][spec] [element][].
 [coverage-page]: https://codecov.io/github/wooorm/hast-util-heading?branch=master
 
 [npm]: https://docs.npmjs.com/cli/install
-
-[releases]: https://github.com/wooorm/hast-util-heading/releases
 
 [license]: LICENSE
 
