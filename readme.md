@@ -15,52 +15,23 @@ globals module, [uncompressed and compressed][releases].
 
 ## Usage
 
-Dependencies:
-
 ```javascript
 var heading = require('hast-util-heading');
-```
 
-Given a non-heading value:
+// Given a non-heading value:
+heading({
+  type: 'element',
+  tagName: 'a',
+  properties: {href: '#alpha', title: 'Bravo'},
+  children: [{type: 'text', value: 'Charlie'}]
+}); //=> false
 
-```javascript
-var result = heading({
-    'type': 'element',
-    'tagName': 'a',
-    'properties': {
-        'href': '#alpha',
-        'title': 'Bravo'
-    },
-    'children': [{
-        'type': 'text',
-        'value': 'Charlie'
-    }]
-});
-```
-
-Yields:
-
-```js
-false
-```
-
-Given a heading element:
-
-```javascript
+// Given a heading element:
 result = heading({
-    'type': 'element',
-    'tagName': 'h1',
-    'children': [{
-        'type': 'text',
-        'value': 'Delta'
-    }]
-});
-```
-
-Yields:
-
-```js
-true
+  type: 'element',
+  tagName: 'h1',
+  children: [{type: 'text', value: 'Delta'}]
+}); //=> true
 ```
 
 ## API
@@ -68,10 +39,6 @@ true
 ### `heading(node)`
 
 Check if the given value is a [**heading**][spec] [element][].
-
-**Parameters**: `node` (`*`) — Value to check.
-
-**Returns**: `boolean`, whether `node` passes the test.
 
 ## License
 
