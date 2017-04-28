@@ -1,10 +1,8 @@
 'use strict';
 
-/* Dependencies. */
 var test = require('tape');
 var heading = require('./');
 
-/* Tests. */
 test('heading', function (t) {
   t.equal(
     heading(),

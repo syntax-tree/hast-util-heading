@@ -1,12 +1,9 @@
 'use strict';
 
-/* Dependencies. */
 var is = require('hast-util-is-element');
 
-/* Expose. */
 module.exports = heading;
 
-/* Tag-names. */
 var names = [
   'h1',
   'h2',
@@ -17,7 +14,6 @@ var names = [
   'hgroup'
 ];
 
-/* Check if a node is a heading element. */
 function heading(node) {
   return is(node, names);
 }
