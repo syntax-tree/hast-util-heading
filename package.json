@@ -11,7 +11,7 @@
     "util",
     "utility"
   ],
-  "repository": "https://github.com/syntax-tree/hast-util-heading",
+  "repository": "syntax-tree/hast-util-heading",
   "bugs": "https://github.com/syntax-tree/hast-util-heading/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
