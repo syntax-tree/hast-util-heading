@@ -13,7 +13,7 @@ npm install hast-util-heading
 ## Usage
 
 ```javascript
-var heading = require('hast-util-heading');
+var heading = require('hast-util-heading')
 
 // Given a non-heading value:
 heading({
@@ -21,14 +21,14 @@ heading({
   tagName: 'a',
   properties: {href: '#alpha', title: 'Bravo'},
   children: [{type: 'text', value: 'Charlie'}]
-}); //=> false
+}) // => false
 
 // Given a heading element:
-result = heading({
+heading({
   type: 'element',
   tagName: 'h1',
   children: [{type: 'text', value: 'Delta'}]
-}); //=> true
+}) // => true
 ```
 
 ## API

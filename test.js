@@ -1,32 +1,24 @@
-'use strict';
+'use strict'
 
-var test = require('tape');
-var heading = require('.');
+var test = require('tape')
+var heading = require('.')
 
-test('heading', function (t) {
-  t.equal(
-    heading(),
-    false,
-    'should return `false` without node'
-  );
+test('heading', function(t) {
+  t.equal(heading(), false, 'should return `false` without node')
 
-  t.equal(
-    heading(null),
-    false,
-    'should return `false` with `null`'
-  );
+  t.equal(heading(null), false, 'should return `false` with `null`')
 
   t.equal(
     heading({type: 'text'}),
     false,
     'should return `false` when without `element`'
-  );
+  )
 
   t.equal(
     heading({type: 'element'}),
     false,
     'should return `false` when with invalid `element`'
-  );
+  )
 
   t.equal(
     heading({
@@ -37,7 +29,7 @@ test('heading', function (t) {
     }),
     false,
     'should return `false` when without not heading'
-  );
+  )
 
   t.equal(
     heading({
@@ -47,7 +39,7 @@ test('heading', function (t) {
     }),
     true,
     'should return `true` when with heading'
-  );
+  )
 
-  t.end();
-});
+  t.end()
+})
