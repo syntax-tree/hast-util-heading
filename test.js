@@ -1,7 +1,7 @@
 'use strict';
 
 var test = require('tape');
-var heading = require('./');
+var heading = require('.');
 
 test('heading', function (t) {
   t.equal(
