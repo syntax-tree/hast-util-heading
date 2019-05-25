@@ -1,18 +1,27 @@
-# hast-util-heading [![Build][build-badge]][build] [![Coverage][coverage-badge]][coverage] [![Downloads][downloads-badge]][downloads] [![Chat][chat-badge]][chat]
+# hast-util-heading
 
-Check if a [node][] is a [**heading**][spec] [element][].
+[![Build][build-badge]][build]
+[![Coverage][coverage-badge]][coverage]
+[![Downloads][downloads-badge]][downloads]
+[![Size][size-badge]][size]
+[![Sponsors][sponsors-badge]][collective]
+[![Backers][backers-badge]][collective]
+[![Chat][chat-badge]][chat]
 
-## Installation
+[**hast**][hast] utility to check if an [*element*][element] is a
+[*heading*][spec].
+
+## Install
 
 [npm][]:
 
-```bash
+```sh
 npm install hast-util-heading
 ```
 
 ## Usage
 
-```javascript
+```js
 var heading = require('hast-util-heading')
 
 // Given a non-heading value:
@@ -35,15 +44,17 @@ heading({
 
 ### `heading(node)`
 
-Check if the given value is a [**heading**][spec] [element][].
+Check if the given value is a [*heading*][spec] [*element*][element].
 
 ## Contribute
 
-See [`contributing.md` in `syntax-tree/hast`][contributing] for ways to get
+See [`contributing.md` in `syntax-tree/.github`][contributing] for ways to get
 started.
+See [`support.md`][support] for ways to get help.
 
-This organisation has a [Code of Conduct][coc].  By interacting with this
-repository, organisation, or community you agree to abide by its terms.
+This project has a [Code of Conduct][coc].
+By interacting with this repository, organisation, or community you agree to
+abide by its terms.
 
 ## License
 
@@ -63,9 +74,19 @@ repository, organisation, or community you agree to abide by its terms.
 
 [downloads]: https://www.npmjs.com/package/hast-util-heading
 
+[size-badge]: https://img.shields.io/bundlephobia/minzip/hast-util-heading.svg
+
+[size]: https://bundlephobia.com/result?p=hast-util-heading
+
+[sponsors-badge]: https://opencollective.com/unified/sponsors/badge.svg
+
+[backers-badge]: https://opencollective.com/unified/backers/badge.svg
+
+[collective]: https://opencollective.com/unified
+
 [chat-badge]: https://img.shields.io/badge/join%20the%20community-on%20spectrum-7b16ff.svg
 
-[chat]: https://spectrum.chat/unified/rehype
+[chat]: https://spectrum.chat/unified/syntax-tree
 
 [npm]: https://docs.npmjs.com/cli/install
 
@@ -73,12 +94,14 @@ repository, organisation, or community you agree to abide by its terms.
 
 [author]: https://wooorm.com
 
-[node]: https://github.com/syntax-tree/unist#node
+[contributing]: https://github.com/syntax-tree/.github/blob/master/contributing.md
 
-[element]: https://github.com/syntax-tree/hast#element
+[support]: https://github.com/syntax-tree/.github/blob/master/support.md
+
+[coc]: https://github.com/syntax-tree/.github/blob/master/code-of-conduct.md
 
 [spec]: https://html.spec.whatwg.org/#heading-content
 
-[contributing]: https://github.com/syntax-tree/hast/blob/master/contributing.md
+[hast]: https://github.com/syntax-tree/hast
 
-[coc]: https://github.com/syntax-tree/hast/blob/master/code-of-conduct.md
+[element]: https://github.com/syntax-tree/hast#element
