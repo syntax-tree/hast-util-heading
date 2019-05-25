@@ -1,7 +1,7 @@
 language: node_js
 node_js:
-- lts/boron
-- node
+  - lts/dubnium
+  - node
 after_script: bash <(curl -s https://codecov.io/bash)
 deploy:
   provider: releases
@@ -9,7 +9,7 @@ deploy:
   api_key:
     secure: DNWl1Ua0nJF5nab8CbqlInOO5Yk34mVMGiBd4dJ8RsaR8BAjgpQCKbxZ09Bqq4dZnO65JrulqafnyK2Sv1EXXzVqvEbSagbjwLmWHuupgAPL0w0E60FpGGB+h5pyXZXViWiXbTC8LxiR7cL7Zr5IxpxZ1G3rS38o1JG+B5l1e8rIuwltaUkMh0NEJEO3OYXKxbvD+xVkF4nCpZjPFUafex8JLhuGXde2xjSSpfpvuIpnF77Vt9FEX55MYz5zSVKxB7SLjR0GmEchLe2nuGe0zGVZ9TeSGlkynO2lyhBYkeCa+tH9Vm/HvbTi+H1AidOkdO6LOAPrX9D0QpzbSUKZHuJ49LO9srfyiVQUSy9lrVoEKLT3Qkr2g7f1mr4RrmmgTaUVkZG6Bxsx5ksf3ND3f5Ro2H6yedG5yoqruwpgjpJMVMNH2R8tfaHBszm19PKQD6elV8O8UjSU0ST4RBioj6kW3ozxdzDwgx4+RkLwpWE6h7T56Ue59xlZrkGnbAUzlX/GGG9QtotIOBHVcm2rLwTITuTtM0mrR4xe1LDz/bvbbzokZgaR6AbqXkiMu/+JkT5qUKxeZ46HVHOd2+3KuMiAhpMOOIl5h6MF9ST/c96x6YVIWEboUKNE2KZUZ3oyFiXIQJzTcTGeup8drg2wWCzEQYor51UKYjHZJDoOXx0=
   file:
-    - "hast-util-heading.js"
-    - "hast-util-heading.min.js"
+    - 'hast-util-heading.js'
+    - 'hast-util-heading.min.js'
   on:
     tags: true
