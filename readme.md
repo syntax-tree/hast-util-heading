@@ -46,6 +46,11 @@ heading({
 
 Check if the given value is a [*heading*][spec] [*element*][element].
 
+## Security
+
+`hast-util-heading` does not change the syntax tree so there are no openings for
+[cross-site scripting (XSS)][xss] attacks.
+
 ## Contribute
 
 See [`contributing.md` in `syntax-tree/.github`][contributing] for ways to get
@@ -105,3 +110,5 @@ abide by its terms.
 [hast]: https://github.com/syntax-tree/hast
 
 [element]: https://github.com/syntax-tree/hast#element
+
+[xss]: https://en.wikipedia.org/wiki/Cross-site_scripting
