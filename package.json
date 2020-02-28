@@ -1,15 +1,17 @@
 {
   "name": "hast-util-heading",
   "version": "1.0.3",
-  "description": "Check if a node is a heading element",
+  "description": "hast utility to check if a node is a heading element",
   "license": "MIT",
   "keywords": [
+    "unist",
     "hast",
+    "hast-util",
+    "util",
+    "utility",
     "html",
     "category",
-    "heading",
-    "util",
-    "utility"
+    "heading"
   ],
   "repository": "syntax-tree/hast-util-heading",
   "bugs": "https://github.com/syntax-tree/hast-util-heading/issues",
