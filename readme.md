@@ -53,6 +53,10 @@ Check if the given value is a [*heading*][spec] [*element*][element].
 
 ## Related
 
+*   [`hast-util-heading-rank`](https://github.com/syntax-tree/hast-util-heading-rank)
+    — get the rank (or depth, level) of headings
+*   [`hast-util-shift-heading`](https://github.com/syntax-tree/hast-util-shift-heading)
+    — change the rank (or depth, level) of headings
 *   [`hast-util-is-element`](https://github.com/syntax-tree/hast-util-is-element)
     — check if a node is a (certain) element
 *   [`hast-util-has-property`](https://github.com/syntax-tree/hast-util-has-property)
