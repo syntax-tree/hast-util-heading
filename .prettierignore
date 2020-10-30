@@ -1,3 +1,5 @@
 coverage/
+*.json
+*.md
 hast-util-heading.js
 hast-util-heading.min.js

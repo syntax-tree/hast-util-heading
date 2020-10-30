@@ -3,7 +3,7 @@
 var test = require('tape')
 var heading = require('.')
 
-test('heading', function(t) {
+test('heading', function (t) {
   t.equal(heading(), false, 'should return `false` without node')
 
   t.equal(heading(null), false, 'should return `false` with `null`')
