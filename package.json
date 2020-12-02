@@ -27,7 +27,7 @@
     "index.js"
   ],
   "dependencies": {
-    "hast-util-is-element": "^1.0.0"
+    "hast-util-is-element": "^1.1.0"
   },
   "devDependencies": {
     "browserify": "^17.0.0",
