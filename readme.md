@@ -104,9 +104,9 @@ abide by its terms.
 
 <!-- Definition -->
 
-[build-badge]: https://img.shields.io/travis/syntax-tree/hast-util-heading.svg
+[build-badge]: https://github.com/syntax-tree/hast-util-heading/workflows/main/badge.svg
 
-[build]: https://travis-ci.org/syntax-tree/hast-util-heading
+[build]: https://github.com/syntax-tree/hast-util-heading/actions
 
 [coverage-badge]: https://img.shields.io/codecov/c/github/syntax-tree/hast-util-heading.svg
 
