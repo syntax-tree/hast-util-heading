@@ -1,5 +1,11 @@
-'use strict'
+import {convertElement} from 'hast-util-is-element'
 
-var convert = require('hast-util-is-element/convert')
-
-module.exports = convert(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'hgroup'])
+export const heading = convertElement([
+  'h1',
+  'h2',
+  'h3',
+  'h4',
+  'h5',
+  'h6',
+  'hgroup'
+])

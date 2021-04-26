@@ -1,7 +1,5 @@
-'use strict'
-
-var test = require('tape')
-var heading = require('.')
+import test from 'tape'
+import {heading} from './index.js'
 
 test('heading', function (t) {
   t.equal(heading(), false, 'should return `false` without node')

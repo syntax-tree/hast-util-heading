@@ -13,6 +13,9 @@
 
 ## Install
 
+This package is [ESM only](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c):
+Node 12+ is needed to use it and it must be `import`ed instead of `require`d.
+
 [npm][]:
 
 ```sh
@@ -22,7 +25,7 @@ npm install hast-util-heading
 ## Use
 
 ```js
-var heading = require('hast-util-heading')
+import {heading} from 'hast-util-heading'
 
 // Given a non-heading value:
 heading({
@@ -41,6 +44,9 @@ heading({
 ```
 
 ## API
+
+This package exports the following identifiers: `heading`.
+There is no default export.
 
 ### `heading(node)`
 
