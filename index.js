@@ -9,7 +9,7 @@ import {convertElement} from 'hast-util-is-element'
  * Check if a node is a heading element (includes `hgroup`!).
  * @type {AssertHeading}
  */
-// @ts-ignore Sure, the assertion matches.
+// @ts-expect-error Sure, the assertion matches.
 export const heading = convertElement([
   'h1',
   'h2',
