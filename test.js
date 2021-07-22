@@ -1,7 +1,7 @@
 import test from 'tape'
 import {heading} from './index.js'
 
-test('heading', function (t) {
+test('heading', (t) => {
   t.equal(heading(), false, 'should return `false` without node')
 
   t.equal(heading(null), false, 'should return `false` with `null`')
