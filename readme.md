@@ -8,18 +8,48 @@
 [![Backers][backers-badge]][collective]
 [![Chat][chat-badge]][chat]
 
-[**hast**][hast] utility to check if an [*element*][element] is a
-[*heading*][spec].
+[hast][] utility to check if a node is a [*heading*][spec].
+
+## Contents
+
+*   [When should I use this?](#when-should-i-use-this)
+*   [Install](#install)
+*   [Use](#use)
+*   [API](#api)
+    *   [`heading(node)`](#headingnode)
+*   [Types](#types)
+*   [Compatibility](#compatibility)
+*   [Security](#security)
+*   [Related](#related)
+*   [Contribute](#contribute)
+*   [License](#license)
+
+## When should I use this?
+
+This utility is super niche, if you’re here you probably know what you’re
+looking for!
 
 ## Install
 
-This package is [ESM only](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c):
-Node 12+ is needed to use it and it must be `import`ed instead of `require`d.
-
-[npm][]:
+This package is [ESM only][esm].
+In Node.js (version 12.20+, 14.14+, 16.0+, or 18.0+), install with [npm][]:
 
 ```sh
 npm install hast-util-heading
+```
+
+In Deno with [`esm.sh`][esmsh]:
+
+```js
+import {heading} from 'https://esm.sh/hast-util-heading@2'
+```
+
+In browsers with [`esm.sh`][esmsh]:
+
+```html
+<script type="module">
+  import {heading} from 'https://esm.sh/hast-util-heading@2?bundle'
+</script>
 ```
 
 ## Use
@@ -45,12 +75,24 @@ heading({
 
 ## API
 
-This package exports the following identifiers: `heading`.
+This package exports the identifier `heading`.
 There is no default export.
 
 ### `heading(node)`
 
 Check if the given value is a [*heading*][spec] [*element*][element].
+
+## Types
+
+This package is fully typed with [TypeScript][].
+It exports no additional types.
+
+## Compatibility
+
+Projects maintained by the unified collective are compatible with all maintained
+versions of Node.js.
+As of now, that is Node.js 12.20+, 14.14+, 16.0+, and 18.0+.
+Our projects sometimes work with older versions, but this is not guaranteed.
 
 ## Security
 
@@ -67,19 +109,19 @@ Check if the given value is a [*heading*][spec] [*element*][element].
     — check if a node is a (certain) element
 *   [`hast-util-has-property`](https://github.com/syntax-tree/hast-util-has-property)
     — check if a node has a property
-*   [`hast-util-is-body-ok-link`](https://github.com/rehypejs/rehype-minify/tree/HEAD/packages/hast-util-is-body-ok-link)
+*   [`hast-util-is-body-ok-link`](https://github.com/rehypejs/rehype-minify/tree/main/packages/hast-util-is-body-ok-link)
     — check if a node is “Body OK” link element
-*   [`hast-util-is-conditional-comment`](https://github.com/rehypejs/rehype-minify/tree/HEAD/packages/hast-util-is-conditional-comment)
+*   [`hast-util-is-conditional-comment`](https://github.com/rehypejs/rehype-minify/tree/main/packages/hast-util-is-conditional-comment)
     — check if a node is a conditional comment
-*   [`hast-util-is-css-link`](https://github.com/rehypejs/rehype-minify/tree/HEAD/packages/hast-util-is-css-link)
+*   [`hast-util-is-css-link`](https://github.com/rehypejs/rehype-minify/tree/main/packages/hast-util-is-css-link)
     — check if a node is a CSS link element
-*   [`hast-util-is-css-style`](https://github.com/rehypejs/rehype-minify/tree/HEAD/packages/hast-util-is-css-style)
+*   [`hast-util-is-css-style`](https://github.com/rehypejs/rehype-minify/tree/main/packages/hast-util-is-css-style)
     — check if a node is a CSS style element
 *   [`hast-util-embedded`](https://github.com/syntax-tree/hast-util-embedded)
     — check if a node is an embedded element
 *   [`hast-util-interactive`](https://github.com/syntax-tree/hast-util-interactive)
     — check if a node is interactive
-*   [`hast-util-is-javascript`](https://github.com/rehypejs/rehype-minify/tree/HEAD/packages/hast-util-is-javascript)
+*   [`hast-util-is-javascript`](https://github.com/rehypejs/rehype-minify/tree/main/packages/hast-util-is-javascript)
     — check if a node is a JavaScript script element
 *   [`hast-util-labelable`](https://github.com/syntax-tree/hast-util-labelable)
     — check whether a node is labelable
@@ -96,8 +138,8 @@ Check if the given value is a [*heading*][spec] [*element*][element].
 
 ## Contribute
 
-See [`contributing.md` in `syntax-tree/.github`][contributing] for ways to get
-started.
+See [`contributing.md`][contributing] in [`syntax-tree/.github`][health] for
+ways to get started.
 See [`support.md`][support] for ways to get help.
 
 This project has a [code of conduct][coc].
@@ -138,15 +180,23 @@ abide by its terms.
 
 [npm]: https://docs.npmjs.com/cli/install
 
+[esm]: https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c
+
+[esmsh]: https://esm.sh
+
+[typescript]: https://www.typescriptlang.org
+
 [license]: license
 
 [author]: https://wooorm.com
 
-[contributing]: https://github.com/syntax-tree/.github/blob/HEAD/contributing.md
+[health]: https://github.com/syntax-tree/.github
 
-[support]: https://github.com/syntax-tree/.github/blob/HEAD/support.md
+[contributing]: https://github.com/syntax-tree/.github/blob/main/contributing.md
 
-[coc]: https://github.com/syntax-tree/.github/blob/HEAD/code-of-conduct.md
+[support]: https://github.com/syntax-tree/.github/blob/main/support.md
+
+[coc]: https://github.com/syntax-tree/.github/blob/main/code-of-conduct.md
 
 [spec]: https://html.spec.whatwg.org/#heading-content
 
