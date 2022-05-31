@@ -8,7 +8,7 @@
 [![Backers][backers-badge]][collective]
 [![Chat][chat-badge]][chat]
 
-[hast][] utility to check if a node is a [*heading*][spec].
+[hast][] utility to check if a node is a [*heading content*][spec].
 
 ## Contents
 
@@ -80,7 +80,7 @@ There is no default export.
 
 ### `heading(node)`
 
-Check if the given value is a [*heading*][spec] [*element*][element].
+Check if the given value is a [*heading content*][spec] [*element*][element].
 
 ## Types
 
