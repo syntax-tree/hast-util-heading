@@ -1,8 +1,15 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
 import {heading} from './index.js'
+import * as mod from './index.js'
 
 test('heading', () => {
+  assert.deepEqual(
+    Object.keys(mod).sort(),
+    ['heading'],
+    'should expose the public api'
+  )
+
   assert.equal(heading(), false, 'should return `false` without node')
 
   assert.equal(heading(null), false, 'should return `false` with `null`')
