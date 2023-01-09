@@ -8,7 +8,7 @@
 [![Backers][backers-badge]][collective]
 [![Chat][chat-badge]][chat]
 
-[hast][] utility to check if a node is a [*heading content*][spec].
+[hast][] utility to check if a node is a [*heading content* element][spec].
 
 ## Contents
 
@@ -16,7 +16,7 @@
 *   [Install](#install)
 *   [Use](#use)
 *   [API](#api)
-    *   [`heading(node)`](#headingnode)
+    *   [`heading(value)`](#headingvalue)
 *   [Types](#types)
 *   [Compatibility](#compatibility)
 *   [Security](#security)
@@ -32,7 +32,7 @@ looking for!
 ## Install
 
 This package is [ESM only][esm].
-In Node.js (version 12.20+, 14.14+, 16.0+, or 18.0+), install with [npm][]:
+In Node.js (version 14.14+ and 16.0+), install with [npm][]:
 
 ```sh
 npm install hast-util-heading
@@ -75,12 +75,24 @@ heading({
 
 ## API
 
-This package exports the identifier `heading`.
+This package exports the identifier [`heading`][heading].
 There is no default export.
 
-### `heading(node)`
+### `heading(value)`
 
-Check if the given value is a [*heading content*][spec] [*element*][element].
+Check if the given value is a [*heading content* element][spec].
+
+###### Parameters
+
+*   `value` (`unknown`)
+    — thing to check (typically [`Node`][node])
+
+###### Returns
+
+Whether value is a heading content element (`boolean`).
+
+The elements `h1`, `h2`, `h3`, `h4`, `h5`, `h6`, and `hgroup` are heading
+content.
 
 ## Types
 
@@ -198,10 +210,12 @@ abide by its terms.
 
 [coc]: https://github.com/syntax-tree/.github/blob/main/code-of-conduct.md
 
-[spec]: https://html.spec.whatwg.org/#heading-content
+[spec]: https://html.spec.whatwg.org/multipage/dom.html#heading-content
 
 [hast]: https://github.com/syntax-tree/hast
 
-[element]: https://github.com/syntax-tree/hast#element
+[node]: https://github.com/syntax-tree/hast#nodes
 
 [xss]: https://en.wikipedia.org/wiki/Cross-site_scripting
+
+[heading]: #headingvalue
