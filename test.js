@@ -1,24 +1,25 @@
-import test from 'tape'
+import assert from 'node:assert/strict'
+import test from 'node:test'
 import {heading} from './index.js'
 
-test('heading', (t) => {
-  t.equal(heading(), false, 'should return `false` without node')
+test('heading', () => {
+  assert.equal(heading(), false, 'should return `false` without node')
 
-  t.equal(heading(null), false, 'should return `false` with `null`')
+  assert.equal(heading(null), false, 'should return `false` with `null`')
 
-  t.equal(
+  assert.equal(
     heading({type: 'text'}),
     false,
     'should return `false` when without `element`'
   )
 
-  t.equal(
+  assert.equal(
     heading({type: 'element'}),
     false,
     'should return `false` when with invalid `element`'
   )
 
-  t.equal(
+  assert.equal(
     heading({
       type: 'element',
       tagName: 'a',
@@ -29,7 +30,7 @@ test('heading', (t) => {
     'should return `false` when without not heading'
   )
 
-  t.equal(
+  assert.equal(
     heading({
       type: 'element',
       tagName: 'h1',
@@ -38,6 +39,4 @@ test('heading', (t) => {
     true,
     'should return `true` when with heading'
   )
-
-  t.end()
 })
