@@ -32,7 +32,7 @@ looking for!
 ## Install
 
 This package is [ESM only][esm].
-In Node.js (version 14.14+ and 16.0+), install with [npm][]:
+In Node.js (version 16+), install with [npm][]:
 
 ```sh
 npm install hast-util-heading
@@ -107,8 +107,8 @@ versions of Node.js.
 
 When we cut a new major release, we drop support for unmaintained versions of
 Node.
-This means we try to keep the current release line, `hast-util-heading@^2`,
-compatible with Node.js 12.
+This means we try to keep the current release line, `hast-util-heading@^3`,
+compatible with Node.js 16.
 
 ## Security
 
