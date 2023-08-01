@@ -41,14 +41,14 @@ npm install hast-util-heading
 In Deno with [`esm.sh`][esmsh]:
 
 ```js
-import {heading} from 'https://esm.sh/hast-util-heading@2'
+import {heading} from 'https://esm.sh/hast-util-heading@3'
 ```
 
 In browsers with [`esm.sh`][esmsh]:
 
 ```html
 <script type="module">
-  import {heading} from 'https://esm.sh/hast-util-heading@2?bundle'
+  import {heading} from 'https://esm.sh/hast-util-heading@3?bundle'
 </script>
 ```
 

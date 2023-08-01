@@ -1,6 +1,6 @@
 {
   "name": "hast-util-heading",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "hast utility to check if a node is a heading element",
   "license": "MIT",
   "keywords": [
