@@ -10,6 +10,7 @@ test('heading', () => {
     'should expose the public api'
   )
 
+  // @ts-expect-error: check how a missing `node` is handled.
   assert.equal(heading(), false, 'should return `false` without node')
 
   assert.equal(heading(null), false, 'should return `false` with `null`')
