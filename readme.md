@@ -69,13 +69,14 @@ heading({
 heading({
   type: 'element',
   tagName: 'h1',
+  properties: {},
   children: [{type: 'text', value: 'Delta'}]
 }) // => true
 ```
 
 ## API
 
-This package exports the identifier [`heading`][heading].
+This package exports the identifier [`heading`][api-heading].
 There is no default export.
 
 ### `heading(value)`
@@ -101,10 +102,13 @@ It exports no additional types.
 
 ## Compatibility
 
-Projects maintained by the unified collective are compatible with all maintained
+Projects maintained by the unified collective are compatible with maintained
 versions of Node.js.
-As of now, that is Node.js 12.20+, 14.14+, 16.0+, and 18.0+.
-Our projects sometimes work with older versions, but this is not guaranteed.
+
+When we cut a new major release, we drop support for unmaintained versions of
+Node.
+This means we try to keep the current release line, `hast-util-heading@^2`,
+compatible with Node.js 12.
 
 ## Security
 
@@ -176,9 +180,9 @@ abide by its terms.
 
 [downloads]: https://www.npmjs.com/package/hast-util-heading
 
-[size-badge]: https://img.shields.io/bundlephobia/minzip/hast-util-heading.svg
+[size-badge]: https://img.shields.io/badge/dynamic/json?label=minzipped%20size&query=$.size.compressedSize&url=https://deno.bundlejs.com/?q=hast-util-heading
 
-[size]: https://bundlephobia.com/result?p=hast-util-heading
+[size]: https://bundlejs.com/?q=hast-util-heading
 
 [sponsors-badge]: https://opencollective.com/unified/sponsors/badge.svg
 
@@ -218,4 +222,4 @@ abide by its terms.
 
 [xss]: https://en.wikipedia.org/wiki/Cross-site_scripting
 
-[heading]: #headingvalue
+[api-heading]: #headingvalue
